@@ -21,6 +21,11 @@ export function MainNav({
 				label: "Settings",
 				active: pathname === `/${params.storeId}/settings`,
 			},
+			{
+				href: `/${params.storeId}/billboards`,
+				label: "Billboards",
+				active: pathname === `/${params.storeId}/billboard`,
+			},
 		];
     return (
         <nav className={cn("flex items-center space-x-4 lg:space-x-6", className)}>
